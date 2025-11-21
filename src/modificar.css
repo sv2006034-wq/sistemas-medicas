@@ -1,0 +1,82 @@
+/* Estilos para Modificar Cita */
+.modificar-cita-container {
+  min-height: 100vh !important;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  padding: 2rem 1rem !important;
+  overflow-y: auto !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+}
+
+.modificar-cita-container * {
+  box-sizing: border-box !important;
+}
+
+/* Header y títulos */
+.modificar-cita-container h1,
+.modificar-cita-container h2,
+.modificar-cita-container h3 {
+  font-weight: bold !important;
+  color: inherit !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* Tarjetas */
+.modificar-cita-container > div > div > div {
+  background: white !important;
+  border-radius: 1rem !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* labels y texto */
+.modificar-cita-container span {
+  line-height: 1.6 !important;
+}
+
+/* Inputs en el modal */
+.modificar-cita-container input[type="date"],
+.modificar-cita-container input[type="time"],
+.modificar-cita-container textarea {
+  width: 100% !important;
+  padding: 0.75rem 1rem !important;
+  border: 2px solid #d1d5db !important;
+  border-radius: 0.5rem !important;
+  background: white !important;
+  font-size: 1rem !important;
+  color: #1f2937 !important;
+  font-family: inherit !important;
+  margin-top: 0.5rem !important;
+}
+
+.modificar-cita-container input:focus,
+.modificar-cita-container textarea:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+}
+
+/* Botones */
+.modificar-cita-container button {
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  border: none !important;
+  font-family: inherit !important;
+  transition: all 0.3s !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Grid de información */
+.modificar-cita-container .grid {
+  display: grid !important;
+  gap: 1rem !important;
+}
+
+/* Espaciado */
+.modificar-cita-container p {
+  margin: 0.5rem 0 !important;
+}

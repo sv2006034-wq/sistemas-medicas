@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(150deg, #0c3483, #87ceeb);
+  height: 100vh;
+}
+
+.formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.formulario h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid silver;
+}
+
+.formulario form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Campos de usuario y contraseña */
+.username, .password , .id, .tipo_documento{
+  position: relative;
+  border-bottom: 2px solid lightblue;
+  margin: 30px 0;
+}
+
+.username input,
+.password input,
+.id input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: black
+}
+.tipo_documento select {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+}
+
+
+.username label,
+.password label,
+.id label,
+.tipo_documento label{
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  color: black;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.username span::before,
+.password span::before,
+.id span::before,
+.tipo_documento span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #6c3483;
+  transition: 0.5s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(150deg, #0c3483, #87ceeb);
+  height: 100vh;
+}
+
+.formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.formulario h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid silver;
+}
+
+.formulario form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Campos de usuario y contraseña */
+.username, .password , .id, .tipo_documento {
+  position: relative;
+  border-bottom: 2px solid lightblue;
+  margin: 30px 0;
+}
+
+.username input,
+.password input,
+.id input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+}
+
+.tipo_documento select {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+}
+
+.username label,
+.password label,
+.id label,
+.tipo_documento label {
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  color: black;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.username span::before,
+.password span::before,
+.id span::before,
+.tipo_documento span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #6c3483;
+  transition: 0.5s;
+}
+
+/* Cuando el campo está enfocado o tiene texto */
+.username input:focus ~ label,
+.password input:focus ~ label,
+.id input:focus ~ label,
+.tipo_documento select:focus ~ label,
+.username input:valid ~ label,
+.password input:valid ~ label,
+.id input:valid ~ label,
+.tipo_documento select:valid ~ label {
+  top: -5px;
+  color: #6c3483;
+  font-size: 14px;
+}
+
+.username input:focus ~ span::before,
+.password input:focus ~ span::before,
+.id input:focus ~ span::before,
+.tipo_documento select:focus ~ span::before {
+  width: 100%;
+}
+
+/* Enlaces y botones */
+.recorder {
+  margin: -5px 0 20px 5px;
+  color: blue;
+  cursor: pointer;
+}
+.recorder:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #6c3483;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover {
+  border-color: purple;
+  transition: 0.5s;
+}
+
+.registrarse {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: seagreen;
+}
+.registrarse a {
+  color: blue;
+  text-decoration: none;
+}
+.registrarse a:hover {
+  text-decoration: underline;
+}
+
+
+.username input:focus ~ span::before,
+.password input:focus ~ span::before,
+.id input:focus ~ span::before
+.tipo_documento :focus ~ span::before{
+  width: 100%;
+}
+
+/* Enlaces y botones */
+.recorder {
+  margin: -5px 0 20px 5px;
+  color: blue;
+  cursor: pointer;
+}
+.recorder:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #6c3483;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover {
+  border-color: purple;
+  transition: 0.5s;
+}
+
+.registrarse {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: seagreen;
+}
+.registrarse a {
+  color: blue;
+  text-decoration: none;
+}
+.registrarse a:hover {
+  text-decoration: underline;
+}
+.login-background {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(150deg, #0c3483, #87ceeb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
